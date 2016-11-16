@@ -1,6 +1,6 @@
 <?php
 $mysql_host = "localhost";
-$mysql_user = "";
-$mysql_password = "";
-$mysql_db = "test";
+$mysql_user = "root";
+$mysql_password = "apmsetup";
+$mysql_db = "dmshop";
 ?>
