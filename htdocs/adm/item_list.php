@@ -691,7 +691,7 @@ for ($i=0; $list=sql_fetch_array($result); $i++) {
     <td><input type="text" name="item_title[<?=$i?>]" value="<?=text($list['item_title'])?>" onFocus="shopInfocus1(this);" onBlur="shopOutfocus1(this);" class="input" style="width:200px;" /></td>
     <td width="10"></td>
     <td><a href="<?=$shop['path']?>/item.php?id=<?=$list['item_code']?>" target="_blank"><img src="<?=$shop['image_path']?>/adm/blank.gif" border="0"></a></td>
-	<td> 키워드 : <input value="<?=text($list['item_keyword'])?>"></td>
+	<td> 태그 : <input value="<?=text($list['item_keyword'])?>"></td>
 </tr>
 </table>
     </td>

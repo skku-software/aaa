@@ -210,7 +210,13 @@ else if ($menu_id == '11') {
 
     }
 
+
 }
+
+	$result = sql_query("select item_keyword  from shop_item ;");
+	for ($i=0; $row=sql_fetch_array($result); $i++) {
+		echo $row['item_keyword'];
+	}
 ?>
 </div>
 

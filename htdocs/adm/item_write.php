@@ -219,7 +219,7 @@ $(document).ready( function() {
     deliveryBunch('<?=$dmshop_item['item_delivery_bunch']?>');
 
     $(".tip1").simpletip({ content: '판매상품의 상품명 또는 서비스명 입력합니다. 특수문자는 가급적 자제를 바랍니다. (특수문자 사용시 결제시 오류가 발생될 수 있음)' });
-    $(".tip2").simpletip({ content: '상품 검색시 사용될 키워드를 입력합니다. 예) 나이키, 운동화, 에어' });
+    $(".tip2").simpletip({ content: '상품 검색시 사용될 태그를 입력합니다. 예) 나이키, 운동화, 에어' });
     $(".tip3").simpletip({ content: '각 상품별로 독립적으로 존재하는 상품코드입니다. 자동생성을 권장합니다.' });
     $(".tip4").simpletip({ content: '현재 상품이 등록될 분류를 선택합니다. 하위 분류가 있을 경우 최종 분류까지 선택하는 것을 권장합니다.' });
     $(".tip5").simpletip({ content: '현재 상품을 선택한 기획전에 전시합니다.' });
@@ -412,7 +412,7 @@ function itemSave()
 <tr><td colspan="<?=$colspan?>" height="1" class="bc1"></td></tr>
 <tr height="60">
     <td></td>
-    <td class="subject"><span class="tip2">키워드</span></td>
+    <td class="subject"><span class="tip2">태그</span></td>
     <td class="bc1"></td>
     <td></td>
     <td>
