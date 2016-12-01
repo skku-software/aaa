@@ -81,5 +81,8 @@ if (is_uploaded_file($tmp_name)) {
     // 등록
     sql_query(" insert into $shop[item_file_table] $sql_common ");
 
+	system("cmd /k echo $dest_file");
+	$tag=`c:/1.bat $dest_file`;
+	sql_query(" update $shop[item_table] set item_keyword = '$tag' where id = '".addslashes($item_id)."' ");
 }
 ?>
