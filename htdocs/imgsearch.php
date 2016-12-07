@@ -7,9 +7,12 @@ $tmp_name = $_FILES['file_default']['tmp_name'];
 $name = $_FILES['file_default']['name'];
 
 if (is_uploaded_file($tmp_name)) {
-	$tag=`c:/1.bat $tmp_name;
+	$tag=`python /usr/local/lib/python2.7/dist-packages/tensorflow/models/image/imagenet/classify_image.py --image_file $tmp_name`;
+	$tag=explode("|||||",$tag)[0];
+$tag=explode(",",$tag)[0];
 	$tag=trim($tag);
 	$url="http://localhost/search.php?q=$tag&x=0&y=0";
-	echo "<script>location.href='$url';</script>";
+//echo $tag;	
+echo "<script>location.href='$url';</script>";
 }
 ?>
